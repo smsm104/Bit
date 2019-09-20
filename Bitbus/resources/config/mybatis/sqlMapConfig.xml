@@ -8,7 +8,17 @@
 
 	<!-- SQL의 결과를 담을 VO 객체들의 별칭을 설정하여 사용의 편의를 도모  -->
 	<typeAliases>
-		<typeAlias alias="User" 	type="com.imjinsan.session.User" />
+		<typeAlias alias="User"		type="com.bittago.repository.vo.User" />
+		<typeAlias alias="Admin"		type="com.bittago.repository.vo.Admin" />
+		<typeAlias alias="Board"		type="com.bittago.repository.vo.Board" />
+		<typeAlias alias="Bus"		type="com.bittago.repository.vo.Bus" />
+		<typeAlias alias="File"		type="com.bittago.repository.vo.File" />
+		<typeAlias alias="Line"		type="com.bittago.repository.vo.Line" />
+		<typeAlias alias="Nonuser"		type="com.bittago.repository.vo.Nonuser" />
+		<typeAlias alias="Reservation"		type="com.bittago.repository.vo.Reservation" />
+		<typeAlias alias="Schedule"		type="com.bittago.repository.vo.Schedule" />
+		<typeAlias alias="Seat"		type="com.bittago.repository.vo.Seat" />
+		<typeAlias alias="Terminal"		type="com.bittago.repository.vo.Terminal" />
 	</typeAliases>
 	
 	<environments default="development">
@@ -25,5 +35,6 @@
 
 	<mappers>
 		<mapper resource="config/mapper/User.xml"/>
+		<mapper resource="config/mapper/Reservation.xml"/>
 	</mappers>
 </configuration>

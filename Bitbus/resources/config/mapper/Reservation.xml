@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace = "com.imjinsan.session.ReservationDAO">
+	
+	<!-- 선택한 출발지, 날짜, 시간에 해당하는 노선 출력 -->
+	<select id="select">
+		select *
+		from tb_line
+		where (select sch_date from tb_schedule where )
+	</select>
+	
+	<select id="test" parameterType="int" resultType="int">
+		select sch_date
+		from tb_schedule
+		where line_no = #{lineNo}
+	</select>
+	
+	
+
+</mapper>	
