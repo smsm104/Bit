@@ -1,4 +1,4 @@
-package com.imjinsan.common.util;
+package com.bittago.util;
 
 import java.io.File;
 import java.util.UUID;
